@@ -1,0 +1,16 @@
+<div>
+  <div *ngIf="pessoas.length > 0">
+    <div>
+      <div *ngFor="let pessoa of pessoas">
+        <div>
+          <p (click)="mostrar(pessoa.nome)">{{ pessoa.nome }}</p>
+        </div>
+
+        <div *ngIf="mostrarDetalhes === pessoa.nome">
+          <img [src]="pessoa.imagem" />
+          <p>Idade: {{ pessoa.idade }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<form [formGroup]="form" (submit)="salvarPessoa()" class="fomulario">
+  <div>
+    <label> Nome </label><br />
+    <input type="text" formControlName="nome" />
+  </div>
+  <div>
+    <label> Idade </label><br />
+    <input type="number" formControlName="idade" />
+  </div>
+  <div>
+    <label> Imagem </label><br />
+    <input type="text" formControlName="imagem" />
+  </div>
+  <button type="submit">Cadastrar</button>
+</form>
